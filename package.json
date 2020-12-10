@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "A simple note taking app with express backend. ## Description",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langjeff/HW_11_NoteTaker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/langjeff/HW_11_NoteTaker/issues"
+  },
+  "homepage": "https://github.com/langjeff/HW_11_NoteTaker#readme"
+}
