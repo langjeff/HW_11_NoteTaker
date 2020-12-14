@@ -1,5 +1,7 @@
 # HW_11_NoteTaker
+
 A simple note taking app with express backend.
+
 ## Description
 
 This project provides a simple note taking experience with the ability to save and delete notes.
@@ -25,7 +27,11 @@ Open the project in VS Code or another editor and then use the terminal to run t
 
 ## Deployment
 
+[Heroku Deployment](https://floating-stream-80948.herokuapp.com/)
+
 ## Functionality
+
+The app paerforms server side storage of notes using express.js.
 
 ## License
 
