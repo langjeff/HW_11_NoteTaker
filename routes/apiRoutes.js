@@ -16,8 +16,11 @@ module.exports = (app) => {
   //get request for when user visits page.
   // in get route use readFileAsync, parse json, and then pass it.
   app.get("/api/notes", (req, res) => {
-    res.json(dbNotes);
-    res.end();
+    readFileAsync("./db/db.json", "utf-8").then((data) => {
+      // let newData = JSON.parse(data);
+      res.json(JSON.parse(data));
+      res.end();
+    });
   });
   //post request for when user saves a note.
   app.post("/api/notes", (req, res) => {
@@ -34,7 +37,6 @@ module.exports = (app) => {
       //writefileAsync for updated
       writeFileAsync("./db/db.json", JSON.stringify(updatedData));
     });
-    res.json(dbNotes);
     res.end();
   });
   // working on delete request, but it seems issues with index.js with buttons not working.
